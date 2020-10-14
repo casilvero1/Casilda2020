@@ -1,0 +1,26 @@
+<envelope>
+    <header>
+        <actor>interlude</actor>
+        <user>xmluser</user>
+        <password>interxml</password>
+        <version>1.6.0</version>
+        <timestamp>20140522105400</timestamp>
+    </header>
+
+    <query type="availability" product="hotel">
+        <checkin date="2014-09-15"/>
+        <checkout date="2014-09-16"/>
+        <hotel id="25846"/>
+        <hotel id="12296"/>
+    
+    <filters>
+        <filter>AVLHEAVY</filter>
+        <filter>AVAILONLY</filter>
+        <filter>BESTARRANGMENT</filter>
+    </filters>
+    
+    <details>
+            <room type="dbl" required="1"/>
+    </details>
+    </query>
+</envelope>

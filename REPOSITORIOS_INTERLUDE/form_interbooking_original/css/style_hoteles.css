@@ -1,0 +1,192 @@
+.section {
+	position: relative;
+	height: 100vh;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-48%);
+	transform: translateY(-45%);
+}
+
+#interbooking {
+	font-family: 'Arial', sans-serif;
+	background-size: cover;
+	background-position: center;
+	color: #191a1e;
+	background-image: url('../img/Hotel_2.jpg');
+	
+}
+
+.interbooking-form {
+	position: relative;
+	max-width: 870px;
+	width: 100%;
+	margin: auto;
+	padding: 40px 25px 25px;
+	overflow: hidden;
+	background-image: url('../img/Hotel_8.jpg');
+	background-size: cover;
+	border-radius: 0px;
+	z-index: 20;
+}
+
+.interbooking-form::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: -1;
+}
+
+.interbooking-form .form-layout {
+	text-align: center;
+	position: sticky;
+	margin-bottom: 9px;
+	
+}
+
+.interbooking-form .form-layout h1 {
+	font-weight: 700;
+	text-transform: capitalize;
+	font-size: 30px;
+	margin: 10px;
+	color: rgb(255, 255, 255);
+}
+
+.interbooking-form .form-group {
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.interbooking-form .form-control {
+	background-color: rgba(255, 255, 255, 0.15);
+	height: 60px;
+	padding: 5px 25px;
+	padding-top: 24px;
+	border: none;
+	border-radius: 20px;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 0px 2px transparent;
+	box-shadow: 0px 0px 0px 2px transparent;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.interbooking-form .form-control::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+.interbooking-form .form-control:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+.interbooking-form .form-control::placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+.interbooking-form .form-control:focus {
+	-webkit-box-shadow: 0px 0px 0px 2px #ff8846;
+	box-shadow: 0px 0px 0px 2px #ff8846;
+}
+
+.interbooking-form input[type="date"].form-control {
+	padding-top: 9px;
+}
+
+.interbooking-form input[type="date"].form-control:invalid {
+	color: rgba(255, 255, 255, 1);
+}
+
+.interbooking-form input[type="date"].form-control+.form-label {
+	opacity: 1;
+	top: 7px;
+}
+
+.interbooking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.interbooking-form select.form-control:invalid {
+	color: rgba(255, 255, 255, 1);
+}
+
+.interbooking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 10px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: rgba(255, 255, 255, 1);
+	font-size: 9px;
+}
+
+.interbooking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.interbooking-form select.form-control option {
+	color: #000;
+}
+
+.interbooking-form .form-label {
+	position: absolute;
+	top: -10px;
+	left: 25px;
+	opacity: 0;
+	color: #ff8846;
+	font-size: 9px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	height: 15px;
+	line-height: 15px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.interbooking-form .form-group.input-not-empty .form-control {
+	padding-top: 16px;
+}
+
+.interbooking-form .form-group.input-not-empty .form-label {
+	opacity: 1;
+	top: 10px;
+}
+
+.interbooking-form .submit-btn {
+	color: #fff;
+	background-color: #e35e0a;
+	font-weight: 700;
+	height: 60px;
+	padding: 10px 30px;
+	width: 100%;
+	border-radius: 20px;
+	border: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 1.3px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.interbooking-form .submit-btn:hover,
+.interbooking-form .submit-btn:focus {
+	opacity: 0.9;
+}
